@@ -63,25 +63,24 @@ if (Enabled) {
                             preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction* respringAction = [UIAlertAction actionWithTitle:@"Respring" style:UIAlertActionStyleDefault
                             handler:^(UIAlertAction * action) {
-
                             	[[%c(FBSystemService) sharedInstance] exitAndRelaunch:YES];
                             }];
     UIAlertAction* safemodeAction = [UIAlertAction actionWithTitle:@"Safe Mode" style:UIAlertActionStyleDefault
                             handler:^(UIAlertAction * action) {
-                            			[self performSelector:@selector(enterTheSafeMode)];
+                            	[self performSelector:@selector(enterTheSafeMode)];
                             }];
     UIAlertAction* powerDownAction = [UIAlertAction actionWithTitle:@"Power Down" style:UIAlertActionStyleDefault
                             handler:^(UIAlertAction * action) {
-                            			[[%c(FBSystemService) sharedInstance] shutdownWithOptions:0];
+                            	[[%c(FBSystemService) sharedInstance] shutdownWithOptions:0];
                             }];
     UIAlertAction* restartAction = [UIAlertAction actionWithTitle:@"Restart" style:UIAlertActionStyleDefault
                             handler:^(UIAlertAction * action) {
-                                        [[%c(FBSystemService) sharedInstance] shutdownAndReboot:YES];
+                                [[%c(FBSystemService) sharedInstance] shutdownAndReboot:YES];
                             }];
 
     UIAlertAction* ldRestartAction = [UIAlertAction actionWithTitle:@"ldRestart" style:UIAlertActionStyleDefault
                             handler:^(UIAlertAction * action) {
-                                        [self performSelector:@selector(ldrestart)];
+                                [self performSelector:@selector(ldrestart)];
                             }];
 
     UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel
