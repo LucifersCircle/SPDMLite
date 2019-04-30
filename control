@@ -1,0 +1,10 @@
+Package: com.idevicehacked.spdmlite
+Name: SPDMLite
+Depends: mobilesubstrate, com.midnightchips.ldrun
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: LucifersCircle <luciferscircle@gmail.com>
+Author: LucifersCircle <luciferscircle@gmail.com>
+Section: Tweaks
+Depiction: https://idevicehacked.com/depictions/?p=com.idevicehacked.spdmlite/
